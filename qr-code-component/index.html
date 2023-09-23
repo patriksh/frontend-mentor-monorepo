@@ -1,61 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | QR code component</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'white': 'hsl(0, 0%, 100%)',
-            'light-gray': 'hsl(212, 45%, 89%)',
-            'grayish-blue': 'hsl(220, 15%, 55%)',
-            'dark-blue': 'hsl(218, 44%, 22%)',
-            'attribution': 'hsl(228, 45%, 44%)'
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: "hsl(0, 0%, 100%)",
+              "light-gray": "hsl(212, 45%, 89%)",
+              "grayish-blue": "hsl(220, 15%, 55%)",
+              "dark-blue": "hsl(218, 44%, 22%)",
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+            },
           },
-          fontFamily: {
-            sans: ['Outfit', 'sans-serif']
-          }
-        }
+        },
+      };
+    </script>
+    <style>
+      html {
+        font-size: 15px;
       }
-    }
-  </script>
-  <style>
-    html {
-      font-size: 15px;
-    }
-  </style>
-</head>
-<body class="m-0 bg-light-gray">
-  <main class="flex justify-center items-center h-screen">
-    <div class="max-w-[320px] h-[500px] p-5 rounded-3xl text-center bg-white shadow">
-      <img class="max-w-full rounded-xl mb-8" src="images/image-qr-code.png" alt="QR code to visit Frontend Mentor">
-      <div class="px-3">
-        <h1 class="font-bold text-2xl text-dark-blue mb-4">
-          Improve your front-end
-          skills by building projects
-        </h1>
-        <p class="leading-tight text-grayish-blue">
-          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-        </p>
+    </style>
+  </head>
+  <body class="m-0 bg-light-gray">
+    <main class="flex justify-center items-center h-screen">
+      <div
+        class="max-w-[320px] h-[500px] p-5 rounded-3xl text-center bg-white shadow"
+      >
+        <img
+          class="max-w-full rounded-xl mb-8"
+          src="images/image-qr-code.png"
+          alt="QR code to visit Frontend Mentor"
+        />
+        <div class="px-3">
+          <h1 class="font-bold text-2xl text-dark-blue mb-4">
+            Improve your front-end skills by building projects
+          </h1>
+          <p class="leading-tight text-grayish-blue">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
       </div>
-    </div>
-  </main>
-  
-  <div class="absolute left-0 right-0 bottom-2 text-sm text-center">
-    Challenge by <a class="text-attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a class="text-attribution" href="https://github.com/patriksh" target="_blank">@patriksh</a>.
-  </div>
-</body>
+    </main>
+  </body>
 </html>
